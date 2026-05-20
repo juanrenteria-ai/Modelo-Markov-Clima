@@ -17,11 +17,9 @@ Este proyecto implementa un **Modelo Oculto de Markov (HMM)** para simular y pre
 | Archivo | Descripción |
 |---|---|
 | `hmm_clima.py` | Código principal con la implementación del HMM, simulación de 30 días, visualizaciones y estadísticas |
-| `generar_documento.py` | Script que genera el documento Word con la solución propuesta |
 | `README.md` | Este archivo: instrucciones y documentación del proyecto |
 | `simulacion_hmm.png` | Gráfico generado: secuencia temporal de estados y observaciones (se crea al ejecutar) |
 | `estadisticas_hmm.png` | Gráfico generado: distribuciones y matriz de confusión (se crea al ejecutar) |
-| `Solucion_HMM_Clima.docx` | Documento Word generado (se crea al ejecutar `generar_documento.py`) |
 
 ---
 
@@ -32,13 +30,6 @@ Este proyecto implementa un **Modelo Oculto de Markov (HMM)** para simular y pre
 ```
 numpy
 matplotlib
-python-docx
-```
-
-### Instalación de dependencias
-
-```bash
-pip install numpy matplotlib python-docx
 ```
 
 ---
@@ -50,13 +41,9 @@ pip install numpy matplotlib python-docx
 1. Abrir [Google Colab](https://colab.research.google.com) en el navegador.
 2. Crear un nuevo notebook (`Archivo → Nuevo cuaderno`).
 3. En la primera celda, instalar dependencias (si es necesario):
-   ```python
-   !pip install python-docx
-   ```
 4. Copiar y pegar el contenido completo de `hmm_clima.py` en una nueva celda.
 5. Ejecutar la celda con `Shift + Enter` o el botón de play.
 6. Los gráficos se mostrarán directamente en el notebook.
-7. Para generar el documento Word, copiar el contenido de `generar_documento.py` en otra celda y ejecutarlo.
 
 ### Opción 2: Jupyter Notebook (local)
 
@@ -70,7 +57,6 @@ pip install numpy matplotlib python-docx
    ```
 3. Crear un nuevo notebook Python 3.
 4. Copiar el contenido de `hmm_clima.py` en una celda y ejecutar.
-5. En otra celda, copiar y ejecutar el contenido de `generar_documento.py`.
 
 ### Opción 3: Terminal / Línea de comandos
 
@@ -78,8 +64,6 @@ pip install numpy matplotlib python-docx
 # Ejecutar la simulación principal
 python hmm_clima.py
 
-# Generar el documento Word
-python generar_documento.py
 ```
 
 ---
@@ -196,14 +180,12 @@ Con la semilla fija de aleatoriedad, la simulación produce resultados reproduci
 ## Estructura de la Solución
 
 ```
-Modulo 2. Actividad didáctica 2-M2/
 ├── Instrucciones.md          # Enunciado de la actividad
 ├── hmm_clima.py              # Código principal HMM
 ├── generar_documento.py      # Generador del documento Word
 ├── README.md                 # Este archivo
 ├── simulacion_hmm.png        # Gráfico generado (tras ejecutar)
 ├── estadisticas_hmm.png      # Gráfico generado (tras ejecutar)
-└── Solucion_HMM_Clima.docx   # Documento Word (tras ejecutar)
 ```
 
 ---
